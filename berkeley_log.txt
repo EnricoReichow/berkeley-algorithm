@@ -1,57 +1,59 @@
-[Sistema] Iniciando algoritmo de Berkeley com 7 processos (clientes)...
-[Coordenador] Passo 1: Aguardando 7 clientes...
-[Cliente 1] Iniciando com rel贸gio local = 13
-[Cliente 2] Iniciando com rel贸gio local = 35
-[Cliente 3] Iniciando com rel贸gio local = 43
-[Coordenador] Conectado a ('127.0.0.1', 52672)
-[Cliente 4] Iniciando com rel贸gio local = 19
-[Cliente 1] Enviando tempo local ao coordenador: 13
-[Cliente 2] Enviando tempo local ao coordenador: 35
-[Cliente 6] Iniciando com rel贸gio local = 40
-[Cliente 5] Iniciando com rel贸gio local = 25
-[Cliente 3] Enviando tempo local ao coordenador: 43
-[Cliente 7] Iniciando com rel贸gio local = 48
-[Coordenador] Recebeu tempo do cliente: 13
-[Cliente 4] Enviando tempo local ao coordenador: 19
-[Cliente 5] Enviando tempo local ao coordenador: 25
-[Cliente 7] Enviando tempo local ao coordenador: 48
-[Cliente 6] Enviando tempo local ao coordenador: 40
-[Coordenador] Conectado a ('127.0.0.1', 52674)
-[Coordenador] Recebeu tempo do cliente: 35
-[Coordenador] Conectado a ('127.0.0.1', 52684)
-[Coordenador] Recebeu tempo do cliente: 43
-[Coordenador] Conectado a ('127.0.0.1', 52690)
-[Coordenador] Recebeu tempo do cliente: 19
-[Coordenador] Conectado a ('127.0.0.1', 52702)
-[Coordenador] Recebeu tempo do cliente: 25
-[Coordenador] Conectado a ('127.0.0.1', 52704)
-[Coordenador] Recebeu tempo do cliente: 40
-[Coordenador] Conectado a ('127.0.0.1', 52712)
-[Coordenador] Recebeu tempo do cliente: 48
-[Coordenador] Tempo local do coordenador: 38
-[Coordenador] Tempos recebidos (clientes + coordenador): [13, 35, 43, 19, 25, 40, 48, 38]
-[Coordenador] M茅dia calculada: 32
-[Coordenador] Enviando ajuste para Cliente 1: 19
-[Coordenador] Enviando ajuste para Cliente 2: -3
-[Cliente 1] Recebeu ajuste: 19
-[Coordenador] Enviando ajuste para Cliente 3: -11
-[Cliente 2] Recebeu ajuste: -3
-[Cliente 1] Rel贸gio ajustado: 32
-[Cliente 2] Rel贸gio ajustado: 32
-[Coordenador] Enviando ajuste para Cliente 4: 13
-[Cliente 3] Recebeu ajuste: -11
-[Cliente 4] Recebeu ajuste: 13
-[Cliente 3] Rel贸gio ajustado: 32
-[Coordenador] Enviando ajuste para Cliente 5: 7
-[Cliente 4] Rel贸gio ajustado: 32
-[Cliente 5] Recebeu ajuste: 7
-[Coordenador] Enviando ajuste para Cliente 6: -8
-[Cliente 5] Rel贸gio ajustado: 32
-[Cliente 6] Recebeu ajuste: -8
-[Coordenador] Enviando ajuste para Cliente 7: -16
-[Cliente 6] Rel贸gio ajustado: 32
-[Cliente 7] Recebeu ajuste: -16
-[Coordenador] Rel贸gio antes = 38, ajuste = -6
-[Cliente 7] Rel贸gio ajustado: 32
-[Coordenador] Rel贸gio ajustado = 32
-[Sistema] Execu莽茫o finalizada. Veja o log completo em berkeley_log.txt
+[Sistema] Iniciando algoritmo de berkeley com 7 processos (clientes)...
+[Coordenador] passo 1: aguardando 7 clientes...
+[Cliente 1] Iniciando com rel骻io local = 27
+[Cliente 3] Iniciando com rel骻io local = 32
+[Cliente 2] Iniciando com rel骻io local = 33
+[Cliente 4] Iniciando com rel骻io local = 32
+[Cliente 1] Enviando tempo local ao Coordenador: 27
+[Coordenador] conectado a ('127.0.0.1', 57776)
+[Cliente 6] Iniciando com rel骻io local = 17
+[Cliente 7] Iniciando com rel骻io local = 15
+[Cliente 5] Iniciando com rel骻io local = 44
+[Cliente 4] Enviando tempo local ao Coordenador: 32
+[Cliente 3] Enviando tempo local ao Coordenador: 32
+[Coordenador] recebeu tempo do cliente: 27
+[Cliente 2] Enviando tempo local ao Coordenador: 33
+[Cliente 6] Enviando tempo local ao Coordenador: 17
+[Cliente 5] Enviando tempo local ao Coordenador: 44
+[Cliente 7] Enviando tempo local ao Coordenador: 15
+[Coordenador] conectado a ('127.0.0.1', 57777)
+[Coordenador] recebeu tempo do cliente: 32
+[Coordenador] conectado a ('127.0.0.1', 57778)
+[Coordenador] recebeu tempo do cliente: 32
+[Coordenador] conectado a ('127.0.0.1', 57779)
+[Coordenador] recebeu tempo do cliente: 33
+[Coordenador] conectado a ('127.0.0.1', 57780)
+[Coordenador] recebeu tempo do cliente: 44
+[Coordenador] conectado a ('127.0.0.1', 57781)
+[Coordenador] recebeu tempo do cliente: 15
+[Coordenador] conectado a ('127.0.0.1', 57782)
+[Coordenador] recebeu tempo do cliente: 17
+[Coordenador] Tempo local do Coordenador: 38
+[Coordenador] Tempos recebidos (clientes + Coordenador): [27, 32, 32, 33, 44, 15, 17, 38]
+[Coordenador] M閐ia calculada: 29
+[Coordenador] Enviando ajuste para cliente 1: 2
+[Coordenador] Enviando ajuste para cliente 2: -3
+[Cliente 1] recebeu ajuste: 2
+[Cliente 3] recebeu ajuste: -3
+[Cliente 1] rel骻io ajustado: 29
+[Coordenador] Enviando ajuste para cliente 3: -3
+[Cliente 3] rel骻io ajustado: 29
+[Cliente 4] recebeu ajuste: -3
+[Coordenador] Enviando ajuste para cliente 4: -4
+[Cliente 4] rel骻io ajustado: 29
+[Cliente 2] recebeu ajuste: -4
+[Coordenador] Enviando ajuste para cliente 5: -15
+[Cliente 2] rel骻io ajustado: 29
+[Cliente 5] recebeu ajuste: -15
+[Coordenador] Enviando ajuste para cliente 6: 14
+[Cliente 5] rel骻io ajustado: 29
+[Coordenador] Enviando ajuste para cliente 7: 12
+[Cliente 7] recebeu ajuste: 14
+[Cliente 7] rel骻io ajustado: 29
+[Cliente 6] recebeu ajuste: 12
+[Coordenador] Rel骻io antes = 38, ajuste = -9
+[Cliente 6] rel骻io ajustado: 29
+[Coordenador] Rel骻io ajustado = 29
+[sistema] Execu玢o finalizada. veja o log completo em berkeley_log.txt
+[Sistema] Execu玢o finalizada. Veja o log completo em berkeley_log.txt
+[Sistema] Execu玢o finalizada. Veja o log completo em berkeley_log.txt
