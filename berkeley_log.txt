@@ -1,59 +1,50 @@
-[Sistema] Iniciando algoritmo de berkeley com 7 processos (clientes)...
-[Coordenador] passo 1: aguardando 7 clientes...
-[Cliente 1] Iniciando com relógio local = 27
-[Cliente 3] Iniciando com relógio local = 32
-[Cliente 2] Iniciando com relógio local = 33
-[Cliente 4] Iniciando com relógio local = 32
-[Cliente 1] Enviando tempo local ao Coordenador: 27
-[Coordenador] conectado a ('127.0.0.1', 57776)
-[Cliente 6] Iniciando com relógio local = 17
-[Cliente 7] Iniciando com relógio local = 15
-[Cliente 5] Iniciando com relógio local = 44
-[Cliente 4] Enviando tempo local ao Coordenador: 32
-[Cliente 3] Enviando tempo local ao Coordenador: 32
-[Coordenador] recebeu tempo do cliente: 27
-[Cliente 2] Enviando tempo local ao Coordenador: 33
-[Cliente 6] Enviando tempo local ao Coordenador: 17
-[Cliente 5] Enviando tempo local ao Coordenador: 44
-[Cliente 7] Enviando tempo local ao Coordenador: 15
-[Coordenador] conectado a ('127.0.0.1', 57777)
-[Coordenador] recebeu tempo do cliente: 32
-[Coordenador] conectado a ('127.0.0.1', 57778)
-[Coordenador] recebeu tempo do cliente: 32
-[Coordenador] conectado a ('127.0.0.1', 57779)
-[Coordenador] recebeu tempo do cliente: 33
-[Coordenador] conectado a ('127.0.0.1', 57780)
-[Coordenador] recebeu tempo do cliente: 44
-[Coordenador] conectado a ('127.0.0.1', 57781)
-[Coordenador] recebeu tempo do cliente: 15
-[Coordenador] conectado a ('127.0.0.1', 57782)
-[Coordenador] recebeu tempo do cliente: 17
-[Coordenador] Tempo local do Coordenador: 38
-[Coordenador] Tempos recebidos (clientes + Coordenador): [27, 32, 32, 33, 44, 15, 17, 38]
-[Coordenador] Média calculada: 29
-[Coordenador] Enviando ajuste para cliente 1: 2
-[Coordenador] Enviando ajuste para cliente 2: -3
-[Cliente 1] recebeu ajuste: 2
-[Cliente 3] recebeu ajuste: -3
-[Cliente 1] relógio ajustado: 29
+[Sistema] Iniciando algoritmo de Berkeley com 5 processos (clientes)...
+[Coordenador] Passo 1: Aguardando 5 clientes...
+[Cliente 1] Iniciando com relógio local = 15
+[Cliente 2] Iniciando com relógio local = 34
+[Cliente 3] Iniciando com relógio local = 30
+[Cliente 4] Iniciando com relógio local = 37
+[Coordenador] Conectado a cliente 1 em ('127.0.0.1', 56971)
+[Cliente 5] Iniciando com relógio local = 29
+[Coordenador] Conectado a cliente 2 em ('127.0.0.1', 56972)
+[Coordenador] Conectado a cliente 3 em ('127.0.0.1', 56973)
+[Coordenador] Conectado a cliente 4 em ('127.0.0.1', 56974)
+[Coordenador] Conectado a cliente 5 em ('127.0.0.1', 56975)
+[Coordenador] Tempo local do Coordenador: 22
+[Coordenador] Enviando tempo para todos os clientes...
+[Cliente 1] Recebeu tempo do Coordenador: 22
+[Cliente 1] Enviando diferença para o Coordenador: -7
+[Cliente 4] Recebeu tempo do Coordenador: 22
+[Cliente 4] Enviando diferença para o Coordenador: 15
+[Cliente 5] Recebeu tempo do Coordenador: 22
+[Coordenador] Aguardando diferenças dos clientes...
+[Cliente 3] Recebeu tempo do Coordenador: 22
+[Cliente 3] Enviando diferença para o Coordenador: 8
+[Cliente 5] Enviando diferença para o Coordenador: 7
+[Coordenador] Recebeu diferença do cliente 1: -7
+[Cliente 2] Recebeu tempo do Coordenador: 22
+[Cliente 2] Enviando diferença para o Coordenador: 12
+[Coordenador] Recebeu diferença do cliente 2: 12
+[Coordenador] Recebeu diferença do cliente 3: 8
+[Coordenador] Recebeu diferença do cliente 4: 15
+[Coordenador] Recebeu diferença do cliente 5: 7
+[Coordenador] Diferenças recebidas (clientes + Coordenador): [-7, 12, 8, 15, 7, 0]
+[Coordenador] Média das diferenças calculada: 5
+[Coordenador] Enviando ajuste para cliente 1: 12
+[Cliente 1] Recebeu ajuste: 12
+[Coordenador] Enviando ajuste para cliente 2: -7
+[Cliente 1] Relógio ajustado: 27
+[Cliente 2] Recebeu ajuste: -7
+[Cliente 2] Relógio ajustado: 27
 [Coordenador] Enviando ajuste para cliente 3: -3
-[Cliente 3] relógio ajustado: 29
-[Cliente 4] recebeu ajuste: -3
-[Coordenador] Enviando ajuste para cliente 4: -4
-[Cliente 4] relógio ajustado: 29
-[Cliente 2] recebeu ajuste: -4
-[Coordenador] Enviando ajuste para cliente 5: -15
-[Cliente 2] relógio ajustado: 29
-[Cliente 5] recebeu ajuste: -15
-[Coordenador] Enviando ajuste para cliente 6: 14
-[Cliente 5] relógio ajustado: 29
-[Coordenador] Enviando ajuste para cliente 7: 12
-[Cliente 7] recebeu ajuste: 14
-[Cliente 7] relógio ajustado: 29
-[Cliente 6] recebeu ajuste: 12
-[Coordenador] Relógio antes = 38, ajuste = -9
-[Cliente 6] relógio ajustado: 29
-[Coordenador] Relógio ajustado = 29
-[sistema] Execução finalizada. veja o log completo em berkeley_log.txt
-[Sistema] Execução finalizada. Veja o log completo em berkeley_log.txt
+[Cliente 3] Recebeu ajuste: -3
+[Coordenador] Enviando ajuste para cliente 4: -10
+[Cliente 3] Relógio ajustado: 27
+[Cliente 4] Recebeu ajuste: -10
+[Cliente 4] Relógio ajustado: 27
+[Coordenador] Enviando ajuste para cliente 5: -2
+[Cliente 5] Recebeu ajuste: -2
+[Coordenador] Relógio antes = 22, ajuste = 5
+[Cliente 5] Relógio ajustado: 27
+[Coordenador] Relógio ajustado = 27
 [Sistema] Execução finalizada. Veja o log completo em berkeley_log.txt
